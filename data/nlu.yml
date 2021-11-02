@@ -17,6 +17,7 @@ nlu:
     - good afternoon
     - yo
     - yoo
+    - hiii
 - intent: goodbye
   examples: |
     - good afternoon
@@ -88,9 +89,20 @@ nlu:
 - intent: issueSoftware
   examples: |
     - software
+    - soft
+    - softs
+    - softwar
+    - softwares
 - intent: issueHardware
   examples: |
     - hardware
+    - hard
+    - hardwa
+    - hardwares
+    - hards
 - intent: issueVision
   examples: |
     - vision
+    - visions
+    - vison
+    - vis
