@@ -1,14 +1,11 @@
 version: "2.0"
-
 stories:
-
 - story: happy path
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
-
 - story: sad path 1
   steps:
   - intent: greet
@@ -18,7 +15,6 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-
 - story: sad path 2
   steps:
   - intent: greet
@@ -28,3 +24,33 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+- story: Story from Conversation ID 11825f00e5854f52854843156cd79f9e
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueSoftware
+  - action: utter_startSoftware
+- story: Story from Conversation ID 3543d610cfad4d11b004ecc1cb6e6156
+  steps:
+  - intent: restart
+  - action: action_restart
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueHardware
+  - action: utter_startHardware
+- story: Story from Conversation ID 6973eb2fe5d8405aabd68871b353ba42
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueSoftware
+  - action: utter_startSoftware
+- story: Story from Conversation ID 4b1565203e8e48e78f68966403d0ea30
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueVision
+  - action: utter_startVision

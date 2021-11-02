@@ -1,34 +1,73 @@
-version: "2.0"
-
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
+version: '2.0'
+config:
+  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hi there!
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_issueType:
+  - text: Is your issue software, hardware or vision related?
+  utter_startSoftware:
+  - buttons:
+    - payload: ''
+      title: Bug (Able simulate)
+    - payload: ''
+      title: Bug (Random)
+    - payload: ''
+      title: Crash
+    - payload: ''
+      title: Vision Cycle Time Spike
+    - payload: ''
+      title: Memory Leak
+    text: What type of software issue are you facing?
+  utter_startHardware:
+  - buttons:
+    - payload: ''
+      title: Bluescreen
+    - payload: ''
+      title: Software/PC Hang
+    - payload: ''
+      title: Invalid Hardware/Grab TimeOut
+    - payload: ''
+      title: Image Flickering
+    text: What type of hardware issue are you facing?
+  utter_startVision:
+  - buttons:
+    - payload: ''
+      title: Overkill/Underkill
+    - payload: ''
+      title: Defect not visible under vision
+    text: What type of vision issue are you facing?
+actions: []
+forms: {}
+e2e_actions: []
