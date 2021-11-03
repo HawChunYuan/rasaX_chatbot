@@ -101,3 +101,23 @@ stories:
   - action: utter_issueType
   - intent: issueSoftware
   - action: utter_startSoftware
+- story: Story from Conversation ID d3a2615a0d3e405f85b99388d78b4cae
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueSoftware
+  - action: utter_startSoftware
+  - intent: soft_crash
+  - intent: soft_crash
+  - intent: soft_crash
+  - intent: soft_crash
+  - intent: soft_crash
+- story: Story from Conversation ID bbb2e2ecac6747fe9e1a1b25c1aac4b7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueSoftware
+  - action: utter_startSoftware
+  - intent: soft_crash

@@ -21,6 +21,8 @@ nlu:
     - helu
     - yooo
     - helloo
+    - heyyy
+    - heyy
 - intent: goodbye
   examples: |
     - good afternoon
@@ -110,3 +112,10 @@ nlu:
     - visions
     - vison
     - vis
+- intent: soft_crash
+  examples: |
+    - crash
+    - Crash
+    - crashes
+    - crashs
+    - crashh

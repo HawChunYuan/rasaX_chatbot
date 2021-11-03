@@ -76,23 +76,92 @@ responses:
     - payload: defect_not_visible_vision
       title: Defect not visible under vision
     text: What type of vision issue are you facing?
-  utter_soft_bug:
-  - text: Export Info
+  utter_soft_bug_simulate:
+  - text: |-
+      **Solution:**
+        Export info
   utter_soft_random:
   - text: |-
-      • Export Info
-       • Image (SaveImageBeforeTest)
-       • V4/V5 backup folder
+      **Solutions:** 
+       • Export info 
+       • Image (SaveImageBeforeTest) 
+       • V4/V5 backup folder 
        • Software version comparision with other handler
   utter_soft_crash:
   - text: |-
-      solutions: 
+      **Solutions:** 
        • Export info 
        • Image (SaveImageBeforeTest) 
        • V4/V5 backup folder 
        • Software version comparision with other handler 
        • CrashDumps 
        • Event Viewer from OS
+  utter_soft_vision_cycle_time_spike:
+  - text: |-
+      **Solutions:** 
+       • Export info 
+       • Image of good unit and defect unit 
+       • V4/V5 backup folder 
+       • Software version comparision with other handler 
+       • [Intel® Processor Diagnostic Tool (Windows Based)](https://downloadcenter.intel.com/download/19792/Intel-Processor-Diagnostic-Tool)
+       • Memory Leak
+       • CPU Usage (During Production Run) <60%
+       • Log Time
+  utter_soft_memory_leak:
+  - text: |-
+      **Solutions:** 
+       • Export info  
+       • V4/V5 backup folder 
+       • Perfmon (Trace V3/V4/V5 memory) C:\PerfLogs
+  utter_hard_bluescreen:
+  - text: |-
+      **Solutions:** 
+       • Export info 
+       • V4/V5 backup folder 
+       • Ghost Image
+       • Perfmon (Trace V3/V4/V5 memory) C:\PerfLogs
+       • [MemTest64 (Windows Based)](https://www.techpowerup.com/download/techpowerup-memtest64/)
+       • [Intel® Processor Diagnostic Tool (Windows Based)](https://downloadcenter.intel.com/download/19792/Intel-Processor-Diagnostic-Tool)
+       • HDD Diagnostic (Recovery USB Pendrive) 
+       • Memory Diagnostic (Recovery USB Pendrive)
+       • Bluescreen Error Code
+       • BlueScreenViewer (C:\Windows\Minidump)
+  utter_hard_software_pc_hang:
+  - text: |-
+      **Solutions:** 
+       • Perfmon (Trace V3/V4/V5 memory) C:\PerfLogs 
+       • [MemTest64 (Windows Based)](https://www.techpowerup.com/download/techpowerup-memtest64/)
+       • [Intel® Processor Diagnostic Tool (Windows Based)](https://downloadcenter.intel.com/download/19792/Intel-Processor-Diagnostic-Tool)
+       • HDD Diagnostic (Recovery USB Pendrive) 
+       • Memory Diagnostic (Recovery USB Pendrive)
+  utter_hard_invalid_grab_time_out:
+  - text: |-
+      **Solutions:** 
+       • CamSelection
+       • Camera Viewer
+  utter_hard_image_flickering:
+  - text: No solution
+  utter_visison_overkill_underkill:
+  - text: |-
+      **Solutions:** 
+       • Export info 
+       • Image of good unit and defect unit 
+       • Committed Vision Spec
+       		--> Committed inspection (accuracy & min detect size)
+            --> Cycle time
+       • Onsite Analysis
+       		--> Software setting adjustment
+  utter_vision_defect_not_visible:
+  - text: |-
+      **Solutions:** 
+       • Committed Vision Spec
+       		--> Committed inspection (accuracy & min detect size)
+            --> Cycle time
+       • Onsite Analysis
+       		--> Software setting adjustment
+       • Onsite Analysis
+       		--> Hardware setting adjustment
+       • Vision and Scope image with defect pin point
 actions: []
 forms: {}
 e2e_actions: []
