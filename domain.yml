@@ -75,7 +75,7 @@ responses:
       title: Bug (Able simulate)
     - payload: soft_bug_random
       title: Bug (Random)
-    - payload: ' soft_crash'
+    - payload: soft_crash
       title: Crash
     - payload: soft_vision_cycle_time_spike
       title: Vision Cycle Time Spike
@@ -102,18 +102,18 @@ responses:
     text: What type of vision issue are you facing?
   utter_soft_bug_simulate:
   - text: |-
-      **Solution:**
+      **Info to Collect:**
         Export info
   utter_soft_bug_random:
   - text: |-
-      **Solutions:** 
+      **Info to Collect:** 
        • Export info 
        • Image (SaveImageBeforeTest) 
        • V4/V5 backup folder 
        • Software version comparision with other handler
   utter_soft_crash:
   - text: |-
-      **Solutions:** 
+      **Info to Collect:** 
        • Export info 
        • Image (SaveImageBeforeTest) 
        • V4/V5 backup folder 
@@ -122,7 +122,7 @@ responses:
        • Event Viewer from OS
   utter_soft_vision_cycle_time_spike:
   - text: |-
-      **Solutions:** 
+      **Info to Collect:** 
        • Export info 
        • Image of good unit and defect unit 
        • V4/V5 backup folder 
@@ -133,13 +133,13 @@ responses:
        • Log Time
   utter_soft_memory_leak:
   - text: |-
-      **Solutions:** 
+      **Info to Collect:** 
        • Export info  
        • V4/V5 backup folder 
        • Perfmon (Trace V3/V4/V5 memory) C:\PerfLogs
   utter_hard_bluescreen:
   - text: |-
-      **Solutions:** 
+      **Info to Collect:** 
        • Export info 
        • V4/V5 backup folder 
        • Ghost Image
@@ -152,7 +152,7 @@ responses:
        • BlueScreenViewer (C:\Windows\Minidump)
   utter_hard_software_pc_hang:
   - text: |-
-      **Solutions:** 
+      **Info to Collect:** 
        • Perfmon (Trace V3/V4/V5 memory) C:\PerfLogs 
        • [MemTest64 (Windows Based)](https://www.techpowerup.com/download/techpowerup-memtest64/)
        • [Intel® Processor Diagnostic Tool (Windows Based)](https://downloadcenter.intel.com/download/19792/Intel-Processor-Diagnostic-Tool)
@@ -160,14 +160,14 @@ responses:
        • Memory Diagnostic (Recovery USB Pendrive)
   utter_hard_invalid_grab_time_out:
   - text: |-
-      **Solutions:** 
+      **Info to Collect:** 
        • CamSelection
        • Camera Viewer
   utter_hard_image_flickering:
   - text: Oops! Please contact our technical support for more information!
   utter_visison_overkill_underkill:
   - text: |-
-      **Solutions:** 
+      **Info to Collect:** 
        • Export info 
        • Image of good unit and defect unit 
        • Committed Vision Spec
@@ -177,7 +177,7 @@ responses:
        		--> Software setting adjustment
   utter_vision_defect_not_visible:
   - text: |-
-      **Solutions:** 
+      **Info to Collect:** 
        • Committed Vision Spec
        		--> Committed inspection (accuracy & min detect size)
             --> Cycle time
@@ -186,6 +186,14 @@ responses:
        • Onsite Analysis
        		--> Hardware setting adjustment
        • Vision and Scope image with defect pin point
+  utter_sol_crash:
+  - text: |-
+      **Solutions:** 
+       • Revert to previous DLL after update
+       • Revert to backup software 
+       • INI key change?
+       • Multithread key enabled?
+       • Identify which inspection causing the problem
 actions: []
 forms: {}
 e2e_actions: []

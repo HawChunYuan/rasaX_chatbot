@@ -52,3 +52,7 @@ rules:
   steps:
   - intent: hard_image_flickering
   - action: utter_hard_image_flickering
+- rule: solution_crash
+  steps:
+  - intent: crash
+  - action: solution_crash

@@ -28,6 +28,8 @@ nlu:
     - yoyo
     - heluu
     - helo
+    - hii
+    - hiiii
 - intent: goodbye
   examples: |
     - good afternoon
@@ -104,6 +106,7 @@ nlu:
     - softs
     - softwar
     - softwares
+    - softw
 - intent: issueHardware
   examples: |
     - hardware
@@ -112,24 +115,18 @@ nlu:
     - hardwares
     - hards
     - hardwar
+    - I am facing a hardware issue when connecting the light
 - intent: issueVision
   examples: |
     - vision
     - visions
     - vison
     - vis
-- intent: soft_crash
-  examples: |
-    - crash
-    - Crash
-    - crashes
-    - crashs
-    - crashh
-    - soft_crash
 - intent: hard_bluescreen
   examples: |
     - Bluescreen
     - hard_bluescreen
+    - bluescreen
 - intent: soft_memory_leak
   examples: |
     - memory leak
@@ -149,21 +146,42 @@ nlu:
     - cant detect defect
     - no defect detected
     - vision_defect_not_visible
+    - defect cant see
 - intent: hard_image_flickering
   examples: |
     - hard_image_flickering
+    - image flicker
 - intent: soft_bug_simulate
   examples: |
     - soft_bug_simulate
 - intent: soft_bug_random
   examples: |
     - soft_bug_random
+    - bug random
+- intent: soft_crash
+  examples: |
+    - soft_crash
+    - soft cra
 - intent: soft_vision_cycle_time_spike
   examples: |
     - soft_vision_cycle_time_spike
+    - vision cycle time problem
 - intent: hard_invalid_grab_time_out
   examples: |
     - hard_invalid_grab_time_out
+    - grab time out
 - intent: thinking
   examples: |
     - hmm
+- intent: crash
+  examples: |
+    - last night electric got cut off, software crash after reopen
+    - h
+    - pc crash suddenly
+    - when opening software, laptop crashes
+    - software suddenly crashes
+    - app crash
+    - computer suddenly crash
+    - laptop crash
+    - laptop crash
+    - crash
