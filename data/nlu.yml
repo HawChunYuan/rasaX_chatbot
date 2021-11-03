@@ -24,6 +24,10 @@ nlu:
     - heyyy
     - heyy
     - morning
+    - hihi
+    - yoyo
+    - heluu
+    - helo
 - intent: goodbye
   examples: |
     - good afternoon
@@ -107,6 +111,7 @@ nlu:
     - hardwa
     - hardwares
     - hards
+    - hardwar
 - intent: issueVision
   examples: |
     - vision
@@ -120,21 +125,45 @@ nlu:
     - crashes
     - crashs
     - crashh
+    - soft_crash
 - intent: hard_bluescreen
   examples: |
     - Bluescreen
+    - hard_bluescreen
 - intent: soft_memory_leak
   examples: |
     - memory leak
+    - soft_memory_leak
 - intent: hard_software_pc_hang
   examples: |
     - pc hang
+    - hard_software_pc_hang
 - intent: visison_overkill_underkill
   examples: |
     - overkill
+    - visison_overkill_underkill
 - intent: vision_defect_not_visible
   examples: |
     - defect not visible
     - cant see defect
     - cant detect defect
     - no defect detected
+    - vision_defect_not_visible
+- intent: hard_image_flickering
+  examples: |
+    - hard_image_flickering
+- intent: soft_bug_simulate
+  examples: |
+    - soft_bug_simulate
+- intent: soft_bug_random
+  examples: |
+    - soft_bug_random
+- intent: soft_vision_cycle_time_spike
+  examples: |
+    - soft_vision_cycle_time_spike
+- intent: hard_invalid_grab_time_out
+  examples: |
+    - hard_invalid_grab_time_out
+- intent: thinking
+  examples: |
+    - hmm

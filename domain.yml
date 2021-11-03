@@ -31,6 +31,26 @@ intents:
     use_entities: true
 - hard_bluescreen:
     use_entities: true
+- soft_memory_leak:
+    use_entities: true
+- hard_software_pc_hang:
+    use_entities: true
+- visison_overkill_underkill:
+    use_entities: true
+- vision_defect_not_visible:
+    use_entities: true
+- hard_image_flickering:
+    use_entities: true
+- soft_bug_simulate:
+    use_entities: true
+- soft_bug_random:
+    use_entities: true
+- soft_vision_cycle_time_spike:
+    use_entities: true
+- hard_invalid_grab_time_out:
+    use_entities: true
+- thinking:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -84,7 +104,7 @@ responses:
   - text: |-
       **Solution:**
         Export info
-  utter_soft_random:
+  utter_soft_bug_random:
   - text: |-
       **Solutions:** 
        • Export info 
@@ -144,7 +164,7 @@ responses:
        • CamSelection
        • Camera Viewer
   utter_hard_image_flickering:
-  - text: No solution
+  - text: Oops! Please contact our technical support for more information!
   utter_visison_overkill_underkill:
   - text: |-
       **Solutions:** 

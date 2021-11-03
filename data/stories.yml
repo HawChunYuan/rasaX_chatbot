@@ -101,26 +101,6 @@ stories:
   - action: utter_issueType
   - intent: issueSoftware
   - action: utter_startSoftware
-- story: Story from Conversation ID d3a2615a0d3e405f85b99388d78b4cae
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - action: utter_issueType
-  - intent: issueSoftware
-  - action: utter_startSoftware
-  - intent: soft_crash
-  - intent: soft_crash
-  - intent: soft_crash
-  - intent: soft_crash
-  - intent: soft_crash
-- story: Story from Conversation ID bbb2e2ecac6747fe9e1a1b25c1aac4b7
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - action: utter_issueType
-  - intent: issueSoftware
-  - action: utter_startSoftware
-  - intent: soft_crash
 - story: Story from Conversation ID 6ea5c4bc9f1b4429bf8f66beb51c8e08
   steps:
   - intent: greet
@@ -139,7 +119,16 @@ stories:
   - action: utter_startSoftware
   - intent: soft_crash
   - action: utter_soft_crash
-- story: Story from Conversation ID ad02ffc76b1d4f6db74ce6abfe73bcc6
+- story: Story from Conversation ID c498f4c71f474b928ffc57efce026f4c
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueVision
+  - action: utter_startVision
+  - intent: visison_overkill_underkill
+  - action: utter_visison_overkill_underkill
+- story: Story from Conversation ID 8e6892fd6b0b4ce6a41a11ca1f072d43
   steps:
   - intent: greet
   - action: utter_greet
@@ -147,3 +136,59 @@ stories:
   - intent: issueHardware
   - action: utter_startHardware
   - intent: hard_bluescreen
+  - action: utter_hard_bluescreen
+- story: Story from Conversation ID d656a276d405457d81d883263309991b
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueSoftware
+  - action: utter_startSoftware
+  - intent: soft_vision_cycle_time_spike
+  - action: utter_soft_vision_cycle_time_spike
+- story: Story from Conversation ID 42843efe5381486c943a7cd6e111fe6e
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: thinking
+  - intent: issueHardware
+  - action: utter_startHardware
+  - intent: hard_software_pc_hang
+  - action: utter_hard_software_pc_hang
+- story: Story from Conversation ID 9d6bbd9ab5fc45dabbc657c0d0843616
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueSoftware
+  - action: utter_startSoftware
+  - intent: soft_bug_simulate
+  - action: utter_soft_bug_simulate
+- story: Story from Conversation ID 66f434e0f5994290bd4fa301139d2413
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueHardware
+  - action: utter_startHardware
+  - intent: hard_image_flickering
+  - action: utter_hard_image_flickering
+- story: Story from Conversation ID 9c1195c09ffc446dafc4274fed5afd4a
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueHardware
+  - action: utter_startHardware
+  - intent: hard_software_pc_hang
+  - action: utter_hard_software_pc_hang
+- story: Story from Conversation ID b8e149c3627540e6a7a74e653547b97e
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueSoftware
+  - action: utter_startSoftware
+  - intent: soft_vision_cycle_time_spike
+  - action: utter_soft_vision_cycle_time_spike

@@ -1,13 +1,54 @@
 version: "2.0"
-
 rules:
-
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
-
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+- rule: soft_bug_simulate
+  steps:
+  - intent: soft_bug_simulate
+  - action: utter_soft_bug_simulate
+- rule: soft_bug_random
+  steps:
+  - intent: soft_bug_random
+  - action: utter_soft_bug_random
+- rule: soft_crash
+  steps:
+  - intent: soft_crash
+  - action: utter_soft_crash
+- rule: soft_vision_cycle_time_spike
+  steps:
+  - intent: soft_vision_cycle_time_spike
+  - action: utter_soft_vision_cycle_time_spike
+- rule: soft_memory_leak
+  steps:
+  - intent: soft_memory_leak
+  - action: utter_soft_memory_leak
+- rule: hard_bluescreen
+  steps:
+  - intent: hard_bluescreen
+  - action: utter_hard_bluescreen
+- rule: hard_software_pc_hang
+  steps:
+  - intent: hard_software_pc_hang
+  - action: utter_hard_software_pc_hang
+- rule: hard_invalid_grab_time_out
+  steps:
+  - intent: hard_invalid_grab_time_out
+  - action: utter_hard_invalid_grab_time_out
+- rule: visison_overkill_underkill
+  steps:
+  - intent: visison_overkill_underkill
+  - action: utter_visison_overkill_underkill
+- rule: vision_defect_not_visible
+  steps:
+  - intent: vision_defect_not_visible
+  - action: utter_vision_defect_not_visible
+- rule: hard_image_flickering
+  steps:
+  - intent: hard_image_flickering
+  - action: utter_hard_image_flickering
