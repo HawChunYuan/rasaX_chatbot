@@ -18,6 +18,9 @@ nlu:
     - yo
     - yoo
     - hiii
+    - helu
+    - yooo
+    - helloo
 - intent: goodbye
   examples: |
     - good afternoon
@@ -80,6 +83,7 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+    - wtf
 - intent: bot_challenge
   examples: |
     - are you a bot?

@@ -19,6 +19,14 @@ intents:
     use_entities: true
 - bot_challenge:
     use_entities: true
+- issueSoftware:
+    use_entities: true
+- issueHardware:
+    use_entities: true
+- issueVision:
+    use_entities: true
+- restart:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -39,35 +47,52 @@ responses:
   - text: Is your issue software, hardware or vision related?
   utter_startSoftware:
   - buttons:
-    - payload: ''
+    - payload: Bug
       title: Bug (Able simulate)
-    - payload: ''
+    - payload: Bug_random
       title: Bug (Random)
-    - payload: ''
+    - payload: Crash
       title: Crash
-    - payload: ''
+    - payload: Vision_Cycle_Time_Spike
       title: Vision Cycle Time Spike
-    - payload: ''
+    - payload: memory_leak
       title: Memory Leak
     text: What type of software issue are you facing?
   utter_startHardware:
   - buttons:
-    - payload: ''
+    - payload: Bluescreen
       title: Bluescreen
-    - payload: ''
+    - payload: Hang_software_hardware
       title: Software/PC Hang
-    - payload: ''
+    - payload: Invalid_Hardware_Grab_TimeOut
       title: Invalid Hardware/Grab TimeOut
-    - payload: ''
+    - payload: Image_flicker
       title: Image Flickering
     text: What type of hardware issue are you facing?
   utter_startVision:
   - buttons:
-    - payload: ''
+    - payload: overkill_underkill
       title: Overkill/Underkill
-    - payload: ''
+    - payload: defect_not_visible_vision
       title: Defect not visible under vision
     text: What type of vision issue are you facing?
+  utter_soft_bug:
+  - text: Export Info
+  utter_soft_random:
+  - text: |-
+      • Export Info
+       • Image (SaveImageBeforeTest)
+       • V4/V5 backup folder
+       • Software version comparision with other handler
+  utter_soft_crash:
+  - text: |-
+      solutions: 
+       • Export info 
+       • Image (SaveImageBeforeTest) 
+       • V4/V5 backup folder 
+       • Software version comparision with other handler 
+       • CrashDumps 
+       • Event Viewer from OS
 actions: []
 forms: {}
 e2e_actions: []

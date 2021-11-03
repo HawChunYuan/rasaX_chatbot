@@ -33,8 +33,6 @@ stories:
   - action: utter_startSoftware
 - story: Story from Conversation ID 3543d610cfad4d11b004ecc1cb6e6156
   steps:
-  - intent: restart
-  - action: action_restart
   - intent: greet
   - action: utter_greet
   - action: utter_issueType
@@ -54,3 +52,52 @@ stories:
   - action: utter_issueType
   - intent: issueVision
   - action: utter_startVision
+- story: Story from Conversation ID e446e1df9f3e4a439414bb6509179c3d
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueHardware
+  - action: utter_startHardware
+- story: Story from Conversation ID 2c4fe07731874f60ae735770c4982b07
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueVision
+  - action: utter_startVision
+- story: Story from Conversation ID 53f7d0617c5f4855819dc1875eb334fd
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueSoftware
+  - action: utter_startSoftware
+- story: Story from Conversation ID 5655feb1a81545038192d2f313b734c8
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueSoftware
+  - action: utter_startSoftware
+- story: Story from Conversation ID 440c78af3c974ce7bd10cc905b6e6b53
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueVision
+  - action: utter_startVision
+- story: Story from Conversation ID fc586f86d1ae415f8e4d63a5101a9311
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueHardware
+  - action: utter_startHardware
+- story: Story from Conversation ID ef50909667a747dea3f598f703f992ff
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueSoftware
+  - action: utter_startSoftware
