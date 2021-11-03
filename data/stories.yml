@@ -192,3 +192,7 @@ stories:
   - action: utter_startSoftware
   - intent: soft_vision_cycle_time_spike
   - action: utter_soft_vision_cycle_time_spike
+- story: Story from Conversation ID b2661daf73804f9a97e0dc2217c5d61f
+  steps:
+  - intent: crash
+  - action: solution_crash
