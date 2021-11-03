@@ -51,6 +51,8 @@ intents:
     use_entities: true
 - thinking:
     use_entities: true
+- crash:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -186,7 +188,7 @@ responses:
        • Onsite Analysis
        		--> Hardware setting adjustment
        • Vision and Scope image with defect pin point
-  utter_sol_crash:
+  utter_solution_crash:
   - text: |-
       **Solutions:** 
        • Revert to previous DLL after update
@@ -194,6 +196,12 @@ responses:
        • INI key change?
        • Multithread key enabled?
        • Identify which inspection causing the problem
-actions: []
+  utter_feedback:
+  - text: Is this solution correct?
+  - text: Did it helps?
+actions:
+- sol_crash
+- solution_crash
+- utter_feedback
 forms: {}
 e2e_actions: []

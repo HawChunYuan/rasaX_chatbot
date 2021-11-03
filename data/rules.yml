@@ -55,4 +55,4 @@ rules:
 - rule: solution_crash
   steps:
   - intent: crash
-  - action: solution_crash
+  - action: utter_solution_crash
