@@ -121,3 +121,29 @@ stories:
   - intent: issueSoftware
   - action: utter_startSoftware
   - intent: soft_crash
+- story: Story from Conversation ID 6ea5c4bc9f1b4429bf8f66beb51c8e08
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueSoftware
+  - action: utter_startSoftware
+  - intent: soft_crash
+  - action: utter_soft_crash
+- story: Story from Conversation ID 22db2541d05c4752adc62c7ac4fe7a7f
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueSoftware
+  - action: utter_startSoftware
+  - intent: soft_crash
+  - action: utter_soft_crash
+- story: Story from Conversation ID ad02ffc76b1d4f6db74ce6abfe73bcc6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_issueType
+  - intent: issueHardware
+  - action: utter_startHardware
+  - intent: hard_bluescreen

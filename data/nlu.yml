@@ -23,6 +23,7 @@ nlu:
     - helloo
     - heyyy
     - heyy
+    - morning
 - intent: goodbye
   examples: |
     - good afternoon
@@ -119,3 +120,21 @@ nlu:
     - crashes
     - crashs
     - crashh
+- intent: hard_bluescreen
+  examples: |
+    - Bluescreen
+- intent: soft_memory_leak
+  examples: |
+    - memory leak
+- intent: hard_software_pc_hang
+  examples: |
+    - pc hang
+- intent: visison_overkill_underkill
+  examples: |
+    - overkill
+- intent: vision_defect_not_visible
+  examples: |
+    - defect not visible
+    - cant see defect
+    - cant detect defect
+    - no defect detected

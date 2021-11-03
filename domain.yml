@@ -27,6 +27,10 @@ intents:
     use_entities: true
 - restart:
     use_entities: true
+- soft_crash:
+    use_entities: true
+- hard_bluescreen:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -47,33 +51,33 @@ responses:
   - text: Is your issue software, hardware or vision related?
   utter_startSoftware:
   - buttons:
-    - payload: Bug
+    - payload: soft_bug_simulate
       title: Bug (Able simulate)
-    - payload: Bug_random
+    - payload: soft_bug_random
       title: Bug (Random)
-    - payload: Crash
+    - payload: ' soft_crash'
       title: Crash
-    - payload: Vision_Cycle_Time_Spike
+    - payload: soft_vision_cycle_time_spike
       title: Vision Cycle Time Spike
-    - payload: memory_leak
+    - payload: soft_memory_leak
       title: Memory Leak
     text: What type of software issue are you facing?
   utter_startHardware:
   - buttons:
-    - payload: Bluescreen
+    - payload: hard_bluescreen
       title: Bluescreen
-    - payload: Hang_software_hardware
+    - payload: hard_software_pc_hang
       title: Software/PC Hang
-    - payload: Invalid_Hardware_Grab_TimeOut
+    - payload: hard_invalid_grab_time_out
       title: Invalid Hardware/Grab TimeOut
-    - payload: Image_flicker
+    - payload: hard_image_flickering
       title: Image Flickering
     text: What type of hardware issue are you facing?
   utter_startVision:
   - buttons:
-    - payload: overkill_underkill
+    - payload: visison_overkill_underkill
       title: Overkill/Underkill
-    - payload: defect_not_visible_vision
+    - payload: ' vision_defect_not_visible'
       title: Defect not visible under vision
     text: What type of vision issue are you facing?
   utter_soft_bug_simulate:
