@@ -53,24 +53,41 @@ intents:
     use_entities: true
 - crash:
     use_entities: true
+- bot_age:
+    use_entities: true
 entities: []
 slots: {}
 responses:
   utter_greet:
-  - text: Hi there!
+  - text: Hi there! How can I help you?  😊
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
-  utter_did_that_help:
-  - text: Did that help you?
+  utter_solution_software_memory_leak:
+  - text: |-
+      **Solutions:** 
+       • Revert to previous DLL after update
+       • Revert to backup software 
+       • Multithread key enabled?
+       • Identify which inspection causing the problem
   utter_happy:
   - text: Great, carry on!
   utter_goodbye:
-  - text: Bye
+  - text: Bye~  😊
+  - text: See ya! 😁
+  - text: Goodbye 😆
+  - text: Have a great one! 🤣
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_issueType:
-  - text: Is your issue software, hardware or vision related?
+  - buttons:
+    - payload: issue_software
+      title: Software
+    - payload: issue_hardware
+      title: Hardware
+    - payload: issue_vision
+      title: Vision
+    text: Is your issue software, hardware or vision related?
   utter_startSoftware:
   - buttons:
     - payload: soft_bug_simulate
@@ -102,18 +119,18 @@ responses:
     - payload: ' vision_defect_not_visible'
       title: Defect not visible under vision
     text: What type of vision issue are you facing?
-  utter_soft_bug_simulate:
+  utter_collect_software_bug_simulate:
   - text: |-
       **Info to Collect:**
         Export info
-  utter_soft_bug_random:
+  utter_collect_software_bug_random:
   - text: |-
       **Info to Collect:** 
        • Export info 
        • Image (SaveImageBeforeTest) 
        • V4/V5 backup folder 
        • Software version comparision with other handler
-  utter_soft_crash:
+  utter_collect_software_crash:
   - text: |-
       **Info to Collect:** 
        • Export info 
@@ -122,7 +139,7 @@ responses:
        • Software version comparision with other handler 
        • CrashDumps 
        • Event Viewer from OS
-  utter_soft_vision_cycle_time_spike:
+  utter_collect_software_vision_cycle_time_spike:
   - text: |-
       **Info to Collect:** 
        • Export info 
@@ -133,13 +150,13 @@ responses:
        • Memory Leak
        • CPU Usage (During Production Run) <60%
        • Log Time
-  utter_soft_memory_leak:
+  utter_collect_software_memory_leak:
   - text: |-
       **Info to Collect:** 
        • Export info  
        • V4/V5 backup folder 
        • Perfmon (Trace V3/V4/V5 memory) C:\PerfLogs
-  utter_hard_bluescreen:
+  utter_collect_hardware_bluescreen:
   - text: |-
       **Info to Collect:** 
        • Export info 
@@ -152,7 +169,7 @@ responses:
        • Memory Diagnostic (Recovery USB Pendrive)
        • Bluescreen Error Code
        • BlueScreenViewer (C:\Windows\Minidump)
-  utter_hard_software_pc_hang:
+  utter_collect_hardware_software_pc_hang:
   - text: |-
       **Info to Collect:** 
        • Perfmon (Trace V3/V4/V5 memory) C:\PerfLogs 
@@ -160,14 +177,14 @@ responses:
        • [Intel® Processor Diagnostic Tool (Windows Based)](https://downloadcenter.intel.com/download/19792/Intel-Processor-Diagnostic-Tool)
        • HDD Diagnostic (Recovery USB Pendrive) 
        • Memory Diagnostic (Recovery USB Pendrive)
-  utter_hard_invalid_grab_time_out:
+  utter_collect_hardware_invalid_grab_time_out:
   - text: |-
       **Info to Collect:** 
        • CamSelection
        • Camera Viewer
-  utter_hard_image_flickering:
+  utter_collect_hardware_image_flickering:
   - text: Oops! Please contact our technical support for more information!
-  utter_visison_overkill_underkill:
+  utter_collect_visison_overkill_underkill:
   - text: |-
       **Info to Collect:** 
        • Export info 
@@ -177,7 +194,7 @@ responses:
             --> Cycle time
        • Onsite Analysis
        		--> Software setting adjustment
-  utter_vision_defect_not_visible:
+  utter_collect_vision_defect_not_visible:
   - text: |-
       **Info to Collect:** 
        • Committed Vision Spec
@@ -197,8 +214,61 @@ responses:
        • Multithread key enabled?
        • Identify which inspection causing the problem
   utter_feedback:
-  - text: Is this solution correct?
-  - text: Did it helps?
+  - buttons:
+    - payload: solution_yes
+      title: Yes
+    - payload: solution_no
+      title: No
+    text: Is this solution correct? 😆
+  - buttons:
+    - payload: solution_yes
+      title: Yes
+    - payload: solution_no
+      title: No
+    text: Did it helps? 😃
+  - buttons:
+    - payload: solution_yes
+      title: Yes
+    - payload: solution_no
+      title: No
+    text: Does this guideline solve your problem? 😊
+  utter_bot_age_old:
+  - text: I’m old enough to give advice, but not old enough to take it. 🤣
+  utter_solution_software_bug_random:
+  - text: |-
+      **Solutions:** 
+       • Revert to previous DLL after update
+       • Revert to backup software 
+       • INI key change?
+       • Multithread key enabled?
+       • Identify which inspection causing the problem
+  utter_solution_software_bug_simulate:
+  - text: |-
+      **Solutions:** 
+       • Revert to previous DLL after update
+       • Revert to backup software 
+       • INI key change?
+       • Multithread key enabled?
+       • Identify which inspection causing the problem
+  utter_solution_software_vision_cycle_time_spike:
+  - text: |-
+      **Solutions:** 
+       • Revert to previous DLL after update
+       • Revert to backup software 
+       • Multithread key enabled?
+       • Identify which inspection causing the problem
+       • Open LogTime to check which engine has the highest time?
+  utter_bug_type:
+  - buttons:
+    - payload: bug_random
+      title: Random
+    - payload: bug_simulate
+      title: Able to simulate
+    text: Is the bug random or able to simulate? :O
+  utter_greet2:
+  - text: Please describe the issue/problem you are facing. 😃
+  utter_did_it_help:
+  - text: Does it help? 😊
 actions:
 - sol_crash
 - solution_crash
