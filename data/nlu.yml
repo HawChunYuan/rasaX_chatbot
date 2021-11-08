@@ -30,6 +30,9 @@ nlu:
     - helo
     - hii
     - hiiii
+    - Hi
+    - happy deepavali
+    - rasa
 - intent: goodbye
   examples: |
     - good afternoon
@@ -51,6 +54,7 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - ok
 - intent: deny
   examples: |
     - no
@@ -60,6 +64,7 @@ nlu:
     - don't like that
     - no way
     - not really
+    - the solution not working
 - intent: mood_great
   examples: |
     - perfect
@@ -76,6 +81,7 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+    - =A=
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -93,12 +99,21 @@ nlu:
     - so saad
     - so sad
     - wtf
+    - Kenapa x balas
+    - stupid
+    - i am bored
+    - why always tiger?
+    - why always tiget?
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - How long does it take before you get frustrated?
+    - How old are you?
+    - Apa tu Rasa
+    - do u have name?
 - intent: issueSoftware
   examples: |
     - software
@@ -107,6 +122,8 @@ nlu:
     - softwar
     - softwares
     - softw
+    - i have software problem
+    - Software
 - intent: issueHardware
   examples: |
     - hardware
@@ -116,12 +133,16 @@ nlu:
     - hards
     - hardwar
     - I am facing a hardware issue when connecting the light
+    - hardwarer'
+    - hard ware
 - intent: issueVision
   examples: |
     - vision
     - visions
     - vison
     - vis
+    - visionss
+    - vision cycle time
 - intent: hard_bluescreen
   examples: |
     - Bluescreen
@@ -147,6 +168,7 @@ nlu:
     - no defect detected
     - vision_defect_not_visible
     - defect cant see
+    - no defect
 - intent: hard_image_flickering
   examples: |
     - hard_image_flickering
@@ -170,6 +192,7 @@ nlu:
   examples: |
     - hard_invalid_grab_time_out
     - grab time out
+    - camera grab time out
 - intent: thinking
   examples: |
     - hmm
@@ -188,3 +211,23 @@ nlu:
     - computer crash
     - hi my laptop crash
     - hi laptop crash
+- intent: bot_age
+  examples: |
+    - How old are you
+- intent: user_issue
+  examples: |
+    - i have an issue
+    - i hv issue
+    - I hv issue
+- synonym: V4
+  examples: |
+    - software
+    - system
+    - vision system
+    - v5
+- synonym: crash
+  examples: |
+    - hang
+    - shut down
+    - closes
+    - stuck
