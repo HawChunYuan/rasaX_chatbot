@@ -21,3 +21,190 @@ stories:
   - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
+- story: Story from Conversation ID 96ae99122d014a4ab10ea40ad3e8fe28
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: crash
+  - action: utter_solution_crash
+  - action: utter_feedback
+  - intent: affirm
+  - action: utter_user_solution_yes
+- story: Story from Conversation ID f4d7ade6a54c4c42a40cf548c4b292e2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: crash
+  - action: utter_solution_crash
+  - action: utter_feedback
+  - intent: affirm
+  - action: utter_user_solution_yes
+  - action: utter_prompt_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID bf4ae0d7104848cd83b8de05edef707a
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: crash
+  - action: utter_solution_crash
+  - action: utter_feedback
+  - intent: deny
+  - action: utter_user_solution_no
+  - action: utter_collect_software_crash
+- story: Story from Conversation ID f1b27e245ebd4605b2d8d0607b2e9517
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: crash
+  - action: utter_solution_crash
+  - action: utter_feedback
+  - intent: solution_prompt_issue
+  - action: utter_issueType
+  - intent: issueSoftware
+  - action: utter_startSoftware
+  - intent: soft_bug_simulate
+  - action: utter_solution_software_bug_simulate
+  - action: utter_feedback
+  - intent: deny
+  - action: utter_user_solution_no
+  - action: utter_collect_software_bug_simulate
+  - action: utter_did_AI_work
+  - intent: deny
+  - action: utter_AI_work_no
+  - action: utter_goodbye
+- story: Story from Conversation ID 41c7fd779d31420aa95172dc7ef74aa7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: soft_vision_cycle_time_spike
+  - action: utter_solution_software_vision_cycle_time_spike
+  - action: utter_feedback
+  - intent: affirm
+  - action: utter_user_solution_yes
+  - action: utter_prompt_anything_else
+  - intent: deny
+  - action: utter_did_AI_work
+  - intent: affirm
+  - action: utter_goodbye
+- story: Story from Conversation ID 7135eeb9e9bc4f82b231047178cedb7b
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: soft_memory_leak
+  - action: utter_solution_software_memory_leak
+  - action: utter_feedback
+  - intent: affirm
+  - action: utter_user_solution_yes
+  - action: utter_did_AI_work
+  - intent: affirm
+  - action: utter_goodbye
+- story: Story from Conversation ID 38aceaf6321142408515069a4dbef122
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: soft_grab_issue
+  - action: utter_solution_software_grab_issue
+  - action: utter_feedback
+  - intent: affirm
+  - action: utter_user_solution_yes
+  - action: utter_prompt_anything_else
+  - intent: deny
+  - action: utter_goodbye
+- story: Story from Conversation ID 7e88ad4b98eb4c20ac0be5272d4d09fc
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: hard_bluescreen
+  - action: utter_solution_hardware_bluescreen
+  - action: utter_feedback
+  - intent: affirm
+  - action: utter_user_solution_yes
+  - action: utter_prompt_anything_else
+  - intent: deny
+  - action: utter_did_AI_work
+  - intent: affirm
+  - action: utter_goodbye
+- story: Story from Conversation ID f84eb63a47c8421c85ce70535e7790c4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: hard_image_flickering
+  - action: utter_solution_hardware_image_flickering
+  - action: utter_feedback
+  - intent: affirm
+  - action: utter_user_solution_yes
+  - action: utter_prompt_anything_else
+  - intent: deny
+  - action: utter_did_AI_work
+  - intent: affirm
+  - action: utter_goodbye
+- story: Story from Conversation ID b903fe48ea6648e59d235d03d1647158
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: hard_ls_malfunction
+  - action: utter_solution_hardware_LS_malfunction
+  - action: utter_feedback
+  - intent: affirm
+  - action: utter_user_solution_yes
+  - action: utter_prompt_anything_else
+  - intent: deny
+  - action: utter_did_AI_work
+  - intent: affirm
+  - action: utter_goodbye
+- story: Story from Conversation ID 8d241c8a9c4743ceaa44c67138dd0715
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: visison_overkill_underkill
+  - action: utter_solution_vision_overkill_underkill
+  - action: utter_feedback
+  - intent: affirm
+  - action: utter_user_solution_yes
+  - action: utter_prompt_anything_else
+  - intent: deny
+  - action: utter_did_AI_work
+  - intent: affirm
+  - action: utter_goodbye
+- story: Story from Conversation ID 3fca7ef07f7d46f1a0961f26864f79d0
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: vision_lighting_unevenness
+  - action: utter_solution_vision_lighting_unevenness
+  - action: utter_feedback
+  - intent: affirm
+  - action: utter_user_solution_yes
+  - action: utter_prompt_anything_else
+  - intent: deny
+  - action: utter_did_AI_work
+  - intent: affirm
+  - action: utter_goodbye
+- story: Story from Conversation ID f27e9fb1454e495482c2cf0e9b77a805
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: vision_defect_not_visible
+  - action: utter_solution_vision_defect_not_visible
+  - action: utter_feedback
+  - intent: affirm
+  - action: utter_user_solution_yes
+  - action: utter_prompt_anything_else
+  - intent: deny
+  - action: utter_did_AI_work
+  - intent: affirm
+  - action: utter_goodbye

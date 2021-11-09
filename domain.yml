@@ -55,28 +55,50 @@ intents:
     use_entities: true
 - bot_age:
     use_entities: true
+- user_issue:
+    use_entities: true
+- solution_prompt_issue:
+    use_entities: true
+- soft_grab_issue:
+    use_entities: true
+- hard_ls_malfunction:
+    use_entities: true
+- vision_overkill_underkill:
+    use_entities: true
+- vision_cycle_time_high:
+    use_entities: true
+- vision_lighting_unevenness:
+    use_entities: true
 entities: []
 slots: {}
 responses:
   utter_greet:
-  - text: Hi there! How can I help you?  😊
+  - text: Hi there!  😊
+  - text: Heyyy! 😊
+  - text: Hiii! 😊
+  - text: Hello! 😁
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
   utter_solution_software_memory_leak:
   - text: |-
-      **Solutions:** 
-       • Revert to previous DLL after update
-       • Revert to backup software 
+      **Please further analyze based on the following methods:** 
+       • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
+       • Revert to backup software. 
+       • Compare with good machine, and copy the DLL or software from good machine to NG machine.
+       • Use the latest DLL from server.
+       • Identify which inspection causing the problem, untick the inspection option or comment out the DLL (if urgent to run production).
        • Multithread key enabled?
-       • Identify which inspection causing the problem
+       • Press F9 to check Trigger Code and Error Code receive, then check with handler.
+       • Consult regional TS leader.
   utter_happy:
   - text: Great, carry on!
   utter_goodbye:
-  - text: Bye~  😊
-  - text: See ya! 😁
-  - text: Goodbye 😆
-  - text: Have a great one! 🤣
+  - text: Okay thanks, bye~  😊
+  - text: Alright. See ya! 😁
+  - text: Okay great, Goodbye! 😆
+  - text: Okay nice , have a great one! 🤣
+  - text: Thank you! Bye bye ~ 😁
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_issueType:
@@ -90,27 +112,29 @@ responses:
     text: Is your issue software, hardware or vision related?
   utter_startSoftware:
   - buttons:
-    - payload: soft_bug_simulate
+    - payload: software_bug_simulate
       title: Bug (Able simulate)
-    - payload: soft_bug_random
+    - payload: software_bug_random
       title: Bug (Random)
-    - payload: soft_crash
+    - payload: software_crash
       title: Crash
-    - payload: soft_vision_cycle_time_spike
+    - payload: software_vision_cycle_time_spike
       title: Vision Cycle Time Spike
-    - payload: soft_memory_leak
+    - payload: software_memory_leak
       title: Memory Leak
     text: What type of software issue are you facing?
   utter_startHardware:
   - buttons:
-    - payload: hard_bluescreen
+    - payload: hardware_bluescreen
       title: Bluescreen
-    - payload: hard_software_pc_hang
+    - payload: hardware_software_pc_hang
       title: Software/PC Hang
-    - payload: hard_invalid_grab_time_out
+    - payload: hardware_invalid_grab_time_out
       title: Invalid Hardware/Grab TimeOut
-    - payload: hard_image_flickering
+    - payload: hardware_image_flickering
       title: Image Flickering
+    - payload: hardware_LS_malfunction
+      title: 'LS Malfunction '
     text: What type of hardware issue are you facing?
   utter_startVision:
   - buttons:
@@ -118,6 +142,10 @@ responses:
       title: Overkill/Underkill
     - payload: ' vision_defect_not_visible'
       title: Defect not visible under vision
+    - payload: vision_lighting_unevenness
+      title: Lighting Unevenness
+    - payload: vision_cycle_time_too_high
+      title: Cycle time too high (consistently)
     text: What type of vision issue are you facing?
   utter_collect_software_bug_simulate:
   - text: |-
@@ -207,71 +235,218 @@ responses:
        • Vision and Scope image with defect pin point
   utter_solution_crash:
   - text: |-
-      **Solutions:** 
-       • Revert to previous DLL after update
-       • Revert to backup software 
-       • INI key change?
+      **Please further analyze based on the following methods:** 
+       • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
+       • Revert to backup software. 
+       • Compare with good machine, and copy the DLL or software from good machine to NG machine.
+       • Use the latest DLL from server.
+       • Action before encounter the problem (simulation step to simulate the issue), and avoid the step to run production (if urgent to run production) Can verify using log event.
+       • Identify which inspection causing the problem, untick the inspection option or comment out the DLL (if urgent to run production).
+       • INI key change? Please revert the INI key value.
+       • Enable saveimagebeforetest=2, and test the image in offline test.
        • Multithread key enabled?
-       • Identify which inspection causing the problem
+       • Check config file (IEPackage, IEPad).
+       • Press F9 to check Trigger Code and Error Code receive, then check with handler.
+       • Check memory usage is it more than 2GB, if yes, please identify which engine causing it, and disable it to continue run production.
+       • Consult regional TS leader.
   utter_feedback:
   - buttons:
     - payload: solution_yes
       title: Yes
     - payload: solution_no
       title: No
+    - payload: solution_prompt_issue
+      title: No, I meant something else!
     text: Is this solution correct? 😆
   - buttons:
     - payload: solution_yes
       title: Yes
     - payload: solution_no
       title: No
+    - payload: solution_prompt_issue
+      title: No, I meant something else!
     text: Did it helps? 😃
   - buttons:
     - payload: solution_yes
       title: Yes
     - payload: solution_no
       title: No
+    - payload: solution_prompt_issue
+      title: No, I meant something else!
     text: Does this guideline solve your problem? 😊
   utter_bot_age_old:
   - text: I’m old enough to give advice, but not old enough to take it. 🤣
   utter_solution_software_bug_random:
   - text: |-
-      **Solutions:** 
-       • Revert to previous DLL after update
-       • Revert to backup software 
-       • INI key change?
+      **Please further analyze based on the following methods:** 
+       • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
+       • Revert to backup software. 
+       • Compare with good machine, and copy the DLL or software from good machine to NG machine.
+       • Use the latest DLL from server.
+       • Action before encounter the problem (simulation step to simulate the issue), and avoid the step to run production (if urgent to run production) Can verify using log event.
+       • Identify which inspection causing the problem, untick the inspection option or comment out the DLL (if urgent to run production).
+       • INI key change? Please revert the INI key value.
        • Multithread key enabled?
-       • Identify which inspection causing the problem
+       • Press F9 to check Trigger Code and Error Code receive, then check with handler.
+       • Consult regional TS leader.
   utter_solution_software_bug_simulate:
   - text: |-
-      **Solutions:** 
-       • Revert to previous DLL after update
-       • Revert to backup software 
-       • INI key change?
+      **Please further analyze based on the following methods:** 
+       • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
+       • Revert to backup software. 
+       • Compare with good machine, and copy the DLL or software from good machine to NG machine.
+       • Use the latest DLL from server.
+       • Fine tune recipe (adjust threshold, adjust advanced setting).
+       • Action before encounter the problem (simulation step to simulate the issue), and avoid the step to run production (if urgent to run production) Can verify using log event.
+       • Identify which inspection causing the problem, untick the inspection option or comment out the DLL (if urgent to run production).
+       • INI key change? Please revert the INI key value.
        • Multithread key enabled?
-       • Identify which inspection causing the problem
+       • Check config file (IEPackage, IEPad).
+       • Press F9 to check Trigger Code and Error Code receive, then check with handler.
+       • Consult regional TS leader.
   utter_solution_software_vision_cycle_time_spike:
   - text: |-
-      **Solutions:** 
-       • Revert to previous DLL after update
-       • Revert to backup software 
-       • Multithread key enabled?
-       • Identify which inspection causing the problem
+      **Please further analyze based on the following methods:** 
+       • Is software upgrade has been done recently? If yes, please revert to the previous DLL.
+       • Revert to backup software. 
+       • Compare with good machine, and copy the DLL or software from good machine to NG machine.
+       • Use the latest DLL from server.
+       • Identify which inspection causing the problem, untick the inspection option or comment out the DLL (if urgent to run production).
        • Open LogTime to check which engine has the highest time?
+       • Press F9 to check Trigger Code and Error Code receive, then check with handler.
+       • Consult regional TS leader.
   utter_bug_type:
   - buttons:
     - payload: bug_random
       title: Random
     - payload: bug_simulate
       title: Able to simulate
-    text: Is the bug random or able to simulate? :O
-  utter_greet2:
+    text: Is the bug random or able to simulate? 👀
+  utter_user_issue:
   - text: Please describe the issue/problem you are facing. 😃
   utter_did_it_help:
   - text: Does it help? 😊
+  utter_user_solution_no:
+  - text: Alright no worries. Please gather the following information along with our conversation and send them to Vitrox Jira.
+  utter_solution_software_grab_issue:
+  - text: |-
+      **Please further analyze based on the following methods:** 
+       • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
+       • Revert to backup software. 
+       • INI key change? Please revert the INI key value.
+       • Check grabsetting if unable to start software normally.
+       • Check memory usage is it more than 2GB, if yes, please identify which engine causing it, and disable it to continue run production.
+       • Check cable connection (camera cable, triggering cable, com port).
+       • Check [GrabSetting]
+       • Check whether CamSelection is correct or not.
+       • Consult regional TS leader.
+  utter_solution_hardware_bluescreen:
+  - text: |-
+      **Please further analyze based on the following methods:** 
+       • Check memory usage is it more than 2GB, if yes, please identify which engine causing it, and disable it to continue run production.
+       • Consult regional TS leader.
+  utter_solution_hardware_invalid_grab_time_out:
+  - text: |-
+      **Please further analyze based on the following methods:** 
+       • Check cable connection (camera cable, triggering cable, com port).
+       • Check whether the LS controller is detected (use device manager).
+       • Check whether CamSelection is correct or not.
+       • Swap with a working camera.
+       • Swap with a working cable.
+       • Use camera recovery tool.
+       • Consult regional TS leader.
+  utter_solution_hardware_image_flickering:
+  - text: |-
+      **Please further analyze based on the following methods:** 
+       • Check cable connection (camera cable, triggering cable, com port).
+       • Check whether the LS controller is detected (use device manager).
+       • Check light source mode, .xml file, etc.
+       • Consult regional TS leader.
+  utter_solution_hardware_LS_malfunction:
+  - text: |-
+      **Please further analyze based on the following methods:** 
+       • Check cable connection (camera cable, triggering cable, com port).
+       • Check whether the LS controller is detected (use device manager).
+       • Check light source mode, .xml file, etc.
+       • Check [GrabSetting].
+       • Swap with a working cable.
+       • Consult regional TS leader.
+  utter_solution_vision_overkill_underkill:
+  - text: |-
+      **Please further analyze based on the following methods:** 
+       • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
+       • Revert to backup software. 
+       • Compare with good machine, and copy the DLL or software from good machine to NG machine.
+       • Use the latest DLL from server.
+       • Action before encounter the problem (simulation step to simulate the issue), and avoid the step to run production (if urgent to run production) Can verify using log event.
+       • Multithread key enabled?
+       • Press F9 to check Trigger Code and Error Code receive, then check with handler.
+       • Fine tune lighting - light source working distance, lighting intensity of each channel.
+       • Perform calibration, accuracy test (check compensation).
+       • Consult regional TS leader.
+  utter_solution_vision_lighting_unevenness:
+  - text: |-
+      **Please further analyze based on the following methods:** 
+       • Fine tune lighting - light source working distance, lighting intensity of each channel.
+       • Consult regional TS leader.
+  utter_solution_vision_defect_not_visible:
+  - text: |-
+      **Please further analyze based on the following methods:** 
+       • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
+       • Revert to backup software. 
+       • Compare with good machine, and copy the DLL or software from good machine to NG machine.
+       • Use the latest DLL from server.
+       • INI key change? Please revert the INI key value
+       • Multithread key enabled?
+       • Check config file (IEPackage, IEPad)
+       • Press F9 to check Trigger Code and Error Code receive, then check with handler.
+       • Fine tune lighting - light source working distance, lighting intensity of each channel.
+       • Consult regional TS leader.
+  utter_solution_vision_cycle_time_too_high:
+  - text: |-
+      **Please further analyze based on the following methods:** 
+       • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
+       • Revert to backup software. 
+       • Compare with good machine, and copy the DLL or software from good machine to NG machine.
+       • Use the latest DLL from server.
+       • Press F9 to check Trigger Code and Error Code receive, then check with handler.
+       • Consult regional TS leader.
+  utter_user_solution_yes:
+  - text: great! 😊
+  - text: Nice!! 😁
+  - text: Glad we could help!! 😃
+  utter_prompt_anything_else:
+  - buttons:
+    - payload: yes
+      title: Yes
+    - payload: no
+      title: No
+    text: Anything else? 😊
+  utter_AI_work_yes:
+  - text: great! 😊
+  - text: Glad we could help!! 😃
+  - text: Nice!! 😁
+  utter_AI_work_no:
+  - text: We are terribly sorry 😢. We will improve our system!!
+  utter_did_AI_work:
+  - buttons:
+    - payload: AI_work_yes
+      title: Yes
+    - payload: AI_work_no
+      title: No
+    text: Did our AI work?
+  utter_collect_vision_cycle_time_high:
+  - text: |-
+      **Info to Collect:** 
+       • Provide export info (must have INI, recipe, image, DLLDirectory)
+       • V4/V5 backup folder 
+       • Software version comparision with other handler 
+       • [Intel® Processor Diagnostic Tool (Windows Based)](https://downloadcenter.intel.com/download/19792/Intel-Processor-Diagnostic-Tool)
+       • Log Time (engine based)
+       • Cycle Time (vision based)
+       • Memory Leak (Process explorer)
+       •
 actions:
-- sol_crash
-- solution_crash
 - utter_feedback
 forms: {}
 e2e_actions: []

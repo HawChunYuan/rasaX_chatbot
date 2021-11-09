@@ -33,6 +33,8 @@ nlu:
     - Hi
     - happy deepavali
     - rasa
+    - oi
+    - ehh
 - intent: goodbye
   examples: |
     - good afternoon
@@ -55,6 +57,8 @@ nlu:
     - that sounds good
     - correct
     - ok
+    - solution_yes
+    - AI_work_yes
 - intent: deny
   examples: |
     - no
@@ -65,6 +69,8 @@ nlu:
     - no way
     - not really
     - the solution not working
+    - solution_no
+    - AI_work_no
 - intent: mood_great
   examples: |
     - perfect
@@ -124,6 +130,7 @@ nlu:
     - softw
     - i have software problem
     - Software
+    - issue_software
 - intent: issueHardware
   examples: |
     - hardware
@@ -148,10 +155,12 @@ nlu:
     - Bluescreen
     - hard_bluescreen
     - bluescreen
+    - computer bluescreen
 - intent: soft_memory_leak
   examples: |
     - memory leak
     - soft_memory_leak
+    - software_memory_leak
 - intent: hard_software_pc_hang
   examples: |
     - pc hang
@@ -160,6 +169,7 @@ nlu:
   examples: |
     - overkill
     - visison_overkill_underkill
+    - overkill la
 - intent: vision_defect_not_visible
   examples: |
     - defect not visible
@@ -176,6 +186,7 @@ nlu:
 - intent: soft_bug_simulate
   examples: |
     - soft_bug_simulate
+    - software_bug_simulate
 - intent: soft_bug_random
   examples: |
     - soft_bug_random
@@ -188,6 +199,7 @@ nlu:
   examples: |
     - soft_vision_cycle_time_spike
     - vision cycle time problem
+    - time spike
 - intent: hard_invalid_grab_time_out
   examples: |
     - hard_invalid_grab_time_out
@@ -206,11 +218,16 @@ nlu:
     - app crash
     - computer suddenly crash
     - laptop crash
-    - laptop crash
     - crash
     - computer crash
     - hi my laptop crash
     - hi laptop crash
+    - When I press learn mark, V4 crash
+    - When I increase mark template count, V4 crash
+    - v4 crash
+    - V4 crash
+    - software crash
+    - system crash
 - intent: bot_age
   examples: |
     - How old are you
@@ -219,6 +236,36 @@ nlu:
     - i have an issue
     - i hv issue
     - I hv issue
+    - i hv an issue
+    - i have issue
+    - i have issue a
+    - hv issue
+    - issue
+    - i hv problem
+- intent: solution_prompt_issue
+  examples: |
+    - solution_prompt_issue
+    - No, I meant something else!
+- intent: soft_grab_issue
+  examples: |
+    - i am facing some grab issue
+    - got grab issue
+    - grab issue
+- intent: hard_ls_malfunction
+  examples: |
+    - hard_ls_malfunction
+    - LS malfunction
+- intent: vision_overkill_underkill
+  examples: |
+    - vision_overkill_underkill
+- intent: vision_cycle_time_high
+  examples: |
+    - vision_cycle_time_high
+    - cycle time high
+- intent: vision_lighting_unevenness
+  examples: |
+    - vision_lighting_unevenness
+    - the lighting not even
 - synonym: V4
   examples: |
     - software
