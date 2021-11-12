@@ -35,6 +35,7 @@ nlu:
     - rasa
     - oi
     - ehh
+    - heyyyy
 - intent: goodbye
   examples: |
     - good afternoon
@@ -142,6 +143,7 @@ nlu:
     - I am facing a hardware issue when connecting the light
     - hardwarer'
     - hard ware
+    - issue_hardware
 - intent: issueVision
   examples: |
     - vision
@@ -156,6 +158,8 @@ nlu:
     - hard_bluescreen
     - bluescreen
     - computer bluescreen
+    - hi computer bluescreen
+    - hardware_bluescreen
 - intent: soft_memory_leak
   examples: |
     - memory leak
@@ -165,10 +169,10 @@ nlu:
   examples: |
     - pc hang
     - hard_software_pc_hang
-- intent: visison_overkill_underkill
+- intent: vision_overkill_underkill
   examples: |
     - overkill
-    - visison_overkill_underkill
+    - vision_overkill_underkill
     - overkill la
 - intent: vision_defect_not_visible
   examples: |
@@ -228,6 +232,7 @@ nlu:
     - V4 crash
     - software crash
     - system crash
+    - running production suddenly software crash
 - intent: bot_age
   examples: |
     - How old are you
@@ -255,9 +260,6 @@ nlu:
   examples: |
     - hard_ls_malfunction
     - LS malfunction
-- intent: vision_overkill_underkill
-  examples: |
-    - vision_overkill_underkill
 - intent: vision_cycle_time_high
   examples: |
     - vision_cycle_time_high

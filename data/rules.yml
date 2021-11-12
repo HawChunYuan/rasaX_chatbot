@@ -8,3 +8,89 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+- rule: hardware
+  steps:
+  - intent: issueHardware
+  - action: utter_startHardware
+- rule: software
+  steps:
+  - intent: issuesoftware
+  - action: utter_startSoftware
+- rule: vision
+  steps:
+  - intent: issueVision
+  - action: utter_startVision
+- rule: hard_bluescreen
+  steps:
+  - intent: hard_bluescreen
+  - action: utter_solution_hardware_bluescreen
+  - action: utter_feedback
+- rule: not what i meant
+  steps:
+  - intent: solution_prompt_issue
+  - action: utter_issueType
+- rule: hard_image_flickering
+  steps:
+  - intent: hard_image_flickering
+  - action: utter_solution_hardware_image_flickering
+  - action: utter_feedback
+- rule: hard_invalid_grab_time_out
+  steps:
+  - intent: hard_invalid_grab_time_out
+  - action: utter_solution_hardware_invalid_grab_time_out
+  - action: utter_feedback
+- rule: hard_ls_malfunction
+  steps:
+  - intent: hard_ls_malfunction
+  - action: utter_solution_hardware_LS_malfunction
+  - action: utter_feedback
+- rule: soft_bug_random
+  steps:
+  - intent: soft_bug_random
+  - action: utter_solution_software_bug_random
+  - action: utter_feedback
+- rule: soft_bug_simulate
+  steps:
+  - intent: soft_bug_simulate
+  - action: utter_solution_software_bug_simulate
+  - action: utter_feedback
+- rule: soft_crash
+  steps:
+  - intent: soft_crash
+  - action: utter_solution_crash
+  - action: utter_feedback
+- rule: soft_grab_issue
+  steps:
+  - intent: soft_grab_issue
+  - action: utter_solution_software_grab_issue
+  - action: utter_feedback
+- rule: soft_memory_leak
+  steps:
+  - intent: soft_memory_leak
+  - action: utter_solution_software_memory_leak
+  - action: utter_feedback
+- rule: soft_vision_cycle_time_spike
+  steps:
+  - intent: soft_vision_cycle_time_spike
+  - action: utter_solution_software_vision_cycle_time_spike
+  - action: utter_feedback
+- rule: vision_cycle_time_high
+  steps:
+  - intent: vision_cycle_time_high
+  - action: utter_solution_vision_cycle_time_too_high
+  - action: utter_feedback
+- rule: vision_defect_not_visible
+  steps:
+  - intent: vision_defect_not_visible
+  - action: utter_solution_vision_defect_not_visible
+  - action: utter_feedback
+- rule: vision_lighting_unevenness
+  steps:
+  - intent: vision_lighting_unevenness
+  - action: utter_solution_vision_lighting_unevenness
+  - action: utter_feedback
+- rule: vision_overkill_underkill
+  steps:
+  - intent: vision_overkill_underkill
+  - action: utter_solution_vision_overkill_underkill
+  - action: utter_feedback

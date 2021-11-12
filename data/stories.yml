@@ -208,3 +208,42 @@ stories:
   - action: utter_did_AI_work
   - intent: affirm
   - action: utter_goodbye
+- story: Story from Conversation ID 93fa5f84bfca4b39be57e677fe632d0b
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: hard_bluescreen
+  - action: utter_solution_hardware_bluescreen
+  - action: utter_feedback
+  - intent: deny
+  - action: utter_user_solution_no
+  - action: utter_collect_hardware_bluescreen
+  - action: utter_prompt_anything_else
+  - intent: deny
+  - action: utter_did_AI_work
+  - intent: affirm
+  - action: utter_AI_work_yes
+  - action: utter_goodbye
+- story: Story from Conversation ID 539bd688ba8e458eb5ab14f90bfc8015
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: crash
+  - action: utter_solution_crash
+  - action: utter_feedback
+  - intent: solution_prompt_issue
+  - action: utter_issueType
+  - intent: issueHardware
+  - action: utter_startHardware
+  - intent: hard_bluescreen
+  - action: utter_solution_hardware_bluescreen
+  - action: utter_feedback
+  - intent: deny
+  - action: utter_user_solution_no
+  - action: utter_collect_hardware_bluescreen
+  - action: utter_did_AI_work
+  - intent: deny
+  - action: utter_AI_work_no
+  - action: utter_goodbye
