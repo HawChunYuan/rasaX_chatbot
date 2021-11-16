@@ -36,6 +36,18 @@ nlu:
     - oi
     - ehh
     - heyyyy
+    - heyyo
+    - heyo
+    - nihao
+    - ni hao
+    - wuiii
+    - zao an
+    - hihihi
+    - hiiiii
+    - woi
+    - woiii
+    - heyoo
+    - afternoon
 - intent: goodbye
   examples: |
     - good afternoon
@@ -152,6 +164,7 @@ nlu:
     - vis
     - visionss
     - vision cycle time
+    - issue_vision
 - intent: hard_bluescreen
   examples: |
     - Bluescreen
@@ -160,11 +173,13 @@ nlu:
     - computer bluescreen
     - hi computer bluescreen
     - hardware_bluescreen
+    - why suddenly bluescreen?
 - intent: soft_memory_leak
   examples: |
     - memory leak
     - soft_memory_leak
     - software_memory_leak
+    - why suddenly memory leak
 - intent: hard_software_pc_hang
   examples: |
     - pc hang
@@ -174,6 +189,7 @@ nlu:
     - overkill
     - vision_overkill_underkill
     - overkill la
+    - vision overkill
 - intent: vision_defect_not_visible
   examples: |
     - defect not visible
@@ -183,32 +199,45 @@ nlu:
     - vision_defect_not_visible
     - defect cant see
     - no defect
+    - defect cannot see
 - intent: hard_image_flickering
   examples: |
     - hard_image_flickering
     - image flicker
+    - image keep flicker
+    - hardware_image_flickering
 - intent: soft_bug_simulate
   examples: |
     - soft_bug_simulate
     - software_bug_simulate
+    - got bug but able to simulate
 - intent: soft_bug_random
   examples: |
     - soft_bug_random
     - bug random
+    - computer random bug
+    - software_bug_random
 - intent: soft_crash
   examples: |
     - soft_crash
     - soft cra
+    - v4 not working
 - intent: soft_vision_cycle_time_spike
   examples: |
     - soft_vision_cycle_time_spike
     - vision cycle time problem
     - time spike
+    - vision cycle time suddenly spike
+    - Vision cycle time suddenly spike
+    - software_vision_cycle_time_spike
+    - vision cycle time spiking la
 - intent: hard_invalid_grab_time_out
   examples: |
     - hard_invalid_grab_time_out
     - grab time out
     - camera grab time out
+    - grab time out during production
+    - grab timeout
 - intent: thinking
   examples: |
     - hmm
@@ -233,6 +262,10 @@ nlu:
     - software crash
     - system crash
     - running production suddenly software crash
+    - v4 crash when generating report
+    - software hang when pressed 3dli advance setting
+    - v4 crash while generating report
+    - crash v4
 - intent: bot_age
   examples: |
     - How old are you
@@ -260,14 +293,18 @@ nlu:
   examples: |
     - hard_ls_malfunction
     - LS malfunction
+    - light source not working
 - intent: vision_cycle_time_high
   examples: |
     - vision_cycle_time_high
     - cycle time high
+    - cycle time too high la
+    - vision_cycle_time_too_high
 - intent: vision_lighting_unevenness
   examples: |
     - vision_lighting_unevenness
     - the lighting not even
+    - light uneven
 - synonym: V4
   examples: |
     - software
@@ -280,3 +317,10 @@ nlu:
     - shut down
     - closes
     - stuck
+- synonym: LS
+  examples: |
+    - light source
+    - light
+    - ls
+    - lights
+    - light sources

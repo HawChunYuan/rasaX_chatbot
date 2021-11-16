@@ -14,7 +14,7 @@ rules:
   - action: utter_startHardware
 - rule: software
   steps:
-  - intent: issuesoftware
+  - intent: issueSoftware
   - action: utter_startSoftware
 - rule: vision
   steps:
@@ -94,3 +94,12 @@ rules:
   - intent: vision_overkill_underkill
   - action: utter_solution_vision_overkill_underkill
   - action: utter_feedback
+- rule: greet issue
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+- rule: fallback rephrase
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_say_again

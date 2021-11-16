@@ -69,6 +69,10 @@ intents:
     use_entities: true
 - vision_lighting_unevenness:
     use_entities: true
+- issuesoftware:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -446,7 +450,23 @@ responses:
        • Cycle Time (vision based)
        • Memory Leak (Process explorer)
        •
+  utter_collect_hardware_LS_malfunction:
+  - text: |-
+      **Info to Collect:** 
+       • Provide export info (must have INI, recipe, image, DLLDirectory)
+       • V4/V5 backup folder 
+       • Screenshot / recording video
+       • Action before encounter problem (simulation step that can simulate the issue consistently)
+  utter_please_say_again:
+  - text: I’m sorry, I don’t understand. Could you say it again? 😢
 actions:
 - utter_feedback
+- solution_hardware_image_flickering
+- solution_hardware_invalid_grab_time_out
+- solution_hardware_LS_malfunction
+- solution_software_vision_cycle_time_spike
+- solution_vision_cycle_time_too_high
+- solution_vision_lighting_unevenness
+- usser
 forms: {}
 e2e_actions: []
