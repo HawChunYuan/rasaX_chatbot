@@ -5,6 +5,8 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- bug:
+    use_entities: true
 - greet:
     use_entities: true
 - goodbye:
@@ -116,28 +118,28 @@ responses:
     text: Is your issue software, hardware or vision related?
   utter_startSoftware:
   - buttons:
-    - payload: software_bug_simulate
+    - payload: soft_bug_simulate
       title: Bug (Able simulate)
-    - payload: software_bug_random
+    - payload: soft_bug_random
       title: Bug (Random)
-    - payload: software_crash
+    - payload: soft_crash
       title: Crash
-    - payload: software_vision_cycle_time_spike
+    - payload: soft_vision_cycle_time_spike
       title: Vision Cycle Time Spike
-    - payload: software_memory_leak
+    - payload: soft_memory_leak
       title: Memory Leak
     text: What type of software issue are you facing?
   utter_startHardware:
   - buttons:
-    - payload: hardware_bluescreen
+    - payload: hard_bluescreen
       title: Bluescreen
-    - payload: hardware_software_pc_hang
+    - payload: hard_software_pc_hang
       title: Software/PC Hang
-    - payload: hardware_invalid_grab_time_out
+    - payload: hard_invalid_grab_time_out
       title: Invalid Hardware/Grab TimeOut
-    - payload: hardware_image_flickering
+    - payload: hard_image_flickering
       title: Image Flickering
-    - payload: hardware_LS_malfunction
+    - payload: hard_ls_malfunction
       title: 'LS Malfunction '
     text: What type of hardware issue are you facing?
   utter_startVision:
@@ -458,7 +460,10 @@ responses:
        • Screenshot / recording video
        • Action before encounter problem (simulation step that can simulate the issue consistently)
   utter_please_say_again:
-  - text: I’m sorry, I don’t understand. Could you say it again? 😢
+  - buttons:
+    - payload: solution_prompt_issue
+      title: Solve Manually
+    text: I’m sorry, I don’t understand. Could you say it again? 😢
 actions:
 - utter_feedback
 - solution_hardware_image_flickering

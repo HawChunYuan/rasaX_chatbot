@@ -190,6 +190,7 @@ nlu:
     - vision_overkill_underkill
     - overkill la
     - vision overkill
+    - underkill
 - intent: vision_defect_not_visible
   examples: |
     - defect not visible
@@ -211,12 +212,14 @@ nlu:
     - soft_bug_simulate
     - software_bug_simulate
     - got bug but able to simulate
+    - bug simulate
 - intent: soft_bug_random
   examples: |
     - soft_bug_random
     - bug random
     - computer random bug
     - software_bug_random
+    - bug_random
 - intent: soft_crash
   examples: |
     - soft_crash
@@ -231,6 +234,7 @@ nlu:
     - Vision cycle time suddenly spike
     - software_vision_cycle_time_spike
     - vision cycle time spiking la
+    - cycle time spike
 - intent: hard_invalid_grab_time_out
   examples: |
     - hard_invalid_grab_time_out
@@ -238,6 +242,7 @@ nlu:
     - camera grab time out
     - grab time out during production
     - grab timeout
+    - hardware_invalid_grab_time_out
 - intent: thinking
   examples: |
     - hmm
@@ -266,6 +271,7 @@ nlu:
     - software hang when pressed 3dli advance setting
     - v4 crash while generating report
     - crash v4
+    - v4 crash liao la
 - intent: bot_age
   examples: |
     - How old are you
@@ -294,6 +300,7 @@ nlu:
     - hard_ls_malfunction
     - LS malfunction
     - light source not working
+    - hardware_LS_malfunction
 - intent: vision_cycle_time_high
   examples: |
     - vision_cycle_time_high
@@ -305,6 +312,12 @@ nlu:
     - vision_lighting_unevenness
     - the lighting not even
     - light uneven
+- intent: bug
+  examples: |
+    - bugg
+    - bugs
+    - bug
+    - bug
 - synonym: V4
   examples: |
     - software

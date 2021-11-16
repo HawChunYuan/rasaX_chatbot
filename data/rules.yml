@@ -103,3 +103,7 @@ rules:
   steps:
   - intent: nlu_fallback
   - action: utter_please_say_again
+- rule: bug type
+  steps:
+  - intent: bug
+  - action: utter_bug_type
