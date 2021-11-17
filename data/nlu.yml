@@ -48,6 +48,11 @@ nlu:
     - woiii
     - heyoo
     - afternoon
+    - wuii
+    - zaoan
+    - heeee
+    - hey yo
+    - hellu
 - intent: goodbye
   examples: |
     - good afternoon
@@ -130,9 +135,18 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
     - How long does it take before you get frustrated?
-    - How old are you?
     - Apa tu Rasa
     - do u have name?
+- intent: bot_age
+  examples: |
+    - How old are you?
+    - How old are you
+    - u how old
+    - 你几岁
+    - u umur berapa
+    - age
+    - how old are you
+    - how old re you
 - intent: issueSoftware
   examples: |
     - software
@@ -174,12 +188,14 @@ nlu:
     - hi computer bluescreen
     - hardware_bluescreen
     - why suddenly bluescreen?
+    - laptop bluescreen
 - intent: soft_memory_leak
   examples: |
     - memory leak
     - soft_memory_leak
     - software_memory_leak
     - why suddenly memory leak
+    - memory leaking
 - intent: hard_software_pc_hang
   examples: |
     - pc hang
@@ -191,6 +207,7 @@ nlu:
     - overkill la
     - vision overkill
     - underkill
+    - visison_overkill_underkill
 - intent: vision_defect_not_visible
   examples: |
     - defect not visible
@@ -207,6 +224,8 @@ nlu:
     - image flicker
     - image keep flicker
     - hardware_image_flickering
+    - image keep flickering
+    - image kept flicker
 - intent: soft_bug_simulate
   examples: |
     - soft_bug_simulate
@@ -225,6 +244,10 @@ nlu:
     - soft_crash
     - soft cra
     - v4 not working
+    - crashes
+    - Crash
+    - crashs
+    - crashh
 - intent: soft_vision_cycle_time_spike
   examples: |
     - soft_vision_cycle_time_spike
@@ -235,6 +258,8 @@ nlu:
     - software_vision_cycle_time_spike
     - vision cycle time spiking la
     - cycle time spike
+    - vision cycle time spike
+    - cision cycle time spike la
 - intent: hard_invalid_grab_time_out
   examples: |
     - hard_invalid_grab_time_out
@@ -246,6 +271,7 @@ nlu:
 - intent: thinking
   examples: |
     - hmm
+    - ermm
 - intent: crash
   examples: |
     - last night electric got cut off, software crash after reopen
@@ -272,9 +298,9 @@ nlu:
     - v4 crash while generating report
     - crash v4
     - v4 crash liao la
-- intent: bot_age
-  examples: |
-    - How old are you
+    - software_crash
+    - software crash when new lot
+    - v4 software crash
 - intent: user_issue
   examples: |
     - i have an issue
@@ -301,6 +327,9 @@ nlu:
     - LS malfunction
     - light source not working
     - hardware_LS_malfunction
+    - light source not workgin
+    - light source malfunction
+    - ls malfunction
 - intent: vision_cycle_time_high
   examples: |
     - vision_cycle_time_high
@@ -312,12 +341,26 @@ nlu:
     - vision_lighting_unevenness
     - the lighting not even
     - light uneven
+    - lightning not even
+    - lightning not evem
+    - lightning uneven
 - intent: bug
   examples: |
     - bugg
     - bugs
     - bug
     - bug
+- intent: nlu_fallback
+  examples: |
+    - bd
+    - g
+    - test
+    - gg
+    - tesggg
+    - tg
+    - tetet
+    - testtetts
+    - abc
 - synonym: V4
   examples: |
     - software

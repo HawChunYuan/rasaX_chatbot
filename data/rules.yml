@@ -107,3 +107,11 @@ rules:
   steps:
   - intent: bug
   - action: utter_bug_type
+- rule: User issue
+  steps:
+  - intent: user_issue
+  - action: utter_user_issue
+- rule: bot age
+  steps:
+  - intent: bot_age
+  - action: utter_bot_age_old

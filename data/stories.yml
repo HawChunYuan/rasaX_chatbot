@@ -160,7 +160,7 @@ stories:
   - intent: greet
   - action: utter_greet
   - action: utter_user_issue
-  - intent: visison_overkill_underkill
+  - intent: vision_overkill_underkill
   - action: utter_solution_vision_overkill_underkill
   - action: utter_feedback
   - intent: affirm
@@ -479,7 +479,7 @@ stories:
   - action: utter_feedback
   - intent: deny
   - action: utter_user_solution_no
-  - action: utter_collect_visison_overkill_underkill
+  - action: utter_collect_vision_overkill_underkill
   - action: utter_prompt_anything_else
   - intent: deny
   - action: utter_did_AI_work
@@ -825,6 +825,63 @@ stories:
   - intent: deny
   - action: utter_user_solution_no
   - action: utter_collect_software_memory_leak
+  - action: utter_prompt_anything_else
+  - intent: deny
+  - action: utter_did_AI_work
+  - intent: deny
+  - action: utter_AI_work_no
+- story: Story from Conversation ID c46a6c2cd6694a00a673231f1e518580
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: nlu_fallback
+  - action: utter_please_say_again
+  - intent: vision_lighting_unevenness
+  - action: utter_solution_vision_lighting_unevenness
+  - action: utter_feedback
+  - intent: deny
+  - action: utter_user_solution_no
+  - action: utter_collect_vision_lighting_unevenness
+  - action: utter_prompt_anything_else
+  - intent: deny
+  - action: utter_did_AI_work
+  - intent: affirm
+  - action: utter_AI_work_yes
+  - action: utter_goodbye
+- story: Story from Conversation ID 9e1da21b2ea64c3d8e02ef9b0f78de5e
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: vision_defect_not_visible
+  - action: utter_solution_vision_defect_not_visible
+  - action: utter_feedback
+  - intent: deny
+  - action: utter_user_solution_no
+  - action: utter_collect_vision_defect_not_visible
+  - action: utter_prompt_anything_else
+  - intent: deny
+  - action: utter_did_AI_work
+  - intent: deny
+  - action: utter_AI_work_no
+- story: Story from Conversation ID 4c48683abaa14bc7913c92ac0ea05f6b
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_user_issue
+  - intent: nlu_fallback
+  - action: utter_please_say_again
+  - intent: solution_prompt_issue
+  - action: utter_issueType
+  - intent: issueVision
+  - action: utter_startVision
+  - intent: vision_lighting_unevenness
+  - action: utter_solution_vision_lighting_unevenness
+  - action: utter_feedback
+  - intent: deny
+  - action: utter_user_solution_no
+  - action: utter_collect_vision_lighting_unevenness
   - action: utter_prompt_anything_else
   - intent: deny
   - action: utter_did_AI_work
