@@ -165,7 +165,7 @@ responses:
        • Software version comparision with other handler
   utter_collect_software_crash:
   - text: |-
-      **(software_bug_simulate)**
+      **(software_crash)**
       **Info to Collect:** 
        • Export info 
        • Image (SaveImageBeforeTest) 

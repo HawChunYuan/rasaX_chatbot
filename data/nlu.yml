@@ -147,6 +147,10 @@ nlu:
     - age
     - how old are you
     - how old re you
+    - how old u
+    - 几岁
+    - umur berapa
+    - how old are u
 - intent: issueSoftware
   examples: |
     - software
@@ -158,6 +162,7 @@ nlu:
     - i have software problem
     - Software
     - issue_software
+    - software not responding
 - intent: issueHardware
   examples: |
     - hardware
@@ -301,6 +306,10 @@ nlu:
     - software_crash
     - software crash when new lot
     - v4 software crash
+    - Software crash when finding dark lead tip
+    - v4 crash la
+    - When restart V4, software crash
+    - VsMP crash
 - intent: user_issue
   examples: |
     - i have an issue
@@ -344,6 +353,7 @@ nlu:
     - lightning not even
     - lightning not evem
     - lightning uneven
+    - light not even
 - intent: bug
   examples: |
     - bugg
@@ -361,6 +371,7 @@ nlu:
     - tetet
     - testtetts
     - abc
+    - You
 - synonym: V4
   examples: |
     - software
