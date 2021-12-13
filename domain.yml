@@ -84,8 +84,8 @@ responses:
     text: 'Here is something to cheer you up:'
   utter_solution_software_memory_leak:
   - text: |-
-      **(software_memory_leak)**
-      **Please further analyze based on the following methods:** 
+      *(software_memory_leak)*
+      *Please further analyze based on the following methods:* 
        • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
        • Revert to backup software. 
        • Compare with good machine, and copy the DLL or software from good machine to NG machine.
@@ -152,21 +152,21 @@ responses:
     text: What type of vision issue are you facing?
   utter_collect_software_bug_simulate:
   - text: |-
-      **(software_bug_simulate)**
-      **Info to Collect:**
+      *(software_bug_simulate)*
+      *Info to Collect:*
         Export info
   utter_collect_software_bug_random:
   - text: |-
-      **(software_bug_random)**
-      **Info to Collect:** 
+      *(software_bug_random)*
+      *Info to Collect:* 
        • Export info 
        • Image (SaveImageBeforeTest) 
        • V4/V5 backup folder 
        • Software version comparision with other handler
   utter_collect_software_crash:
   - text: |-
-      **(software_crash)**
-      **Info to Collect:** 
+      *(software_crash)*
+      *Info to Collect:* 
        • Export info 
        • Image (SaveImageBeforeTest) 
        • V4/V5 backup folder 
@@ -175,8 +175,8 @@ responses:
        • Event Viewer from OS
   utter_collect_software_vision_cycle_time_spike:
   - text: |-
-      **(software_vision_cycle_time_spike)**
-      **Info to Collect:** 
+      *(software_vision_cycle_time_spike)*
+      *Info to Collect:* 
        • Export info 
        • Image of good unit and defect unit 
        • V4/V5 backup folder 
@@ -187,15 +187,15 @@ responses:
        • Log Time
   utter_collect_software_memory_leak:
   - text: |-
-      **(software_memory_leak)**
-      **Info to Collect:** 
+      *(software_memory_leak)*
+      *Info to Collect:* 
        • Export info  
        • V4/V5 backup folder 
        • Perfmon (Trace V3/V4/V5 memory) C:\PerfLogs
   utter_collect_hardware_bluescreen:
   - text: |-
-      **(hardware_bluescreen)**
-      **Info to Collect:** 
+      *(hardware_bluescreen)*
+      *Info to Collect:* 
        • Export info 
        • V4/V5 backup folder 
        • Ghost Image
@@ -208,8 +208,8 @@ responses:
        • BlueScreenViewer (C:\Windows\Minidump)
   utter_collect_hardware_software_pc_hang:
   - text: |-
-      **(hardware_software_pc_hang)**
-      **Info to Collect:** 
+      *(hardware_software_pc_hang)*
+      *Info to Collect:* 
        • Perfmon (Trace V3/V4/V5 memory) C:\PerfLogs 
        • [MemTest64 (Windows Based)](https://www.techpowerup.com/download/techpowerup-memtest64/)
        • [Intel® Processor Diagnostic Tool (Windows Based)](https://downloadcenter.intel.com/download/19792/Intel-Processor-Diagnostic-Tool)
@@ -217,8 +217,8 @@ responses:
        • Memory Diagnostic (Recovery USB Pendrive)
   utter_collect_hardware_invalid_grab_time_out:
   - text: |-
-      **(hardware_invalid_grab_time_out)**
-      **Info to Collect:** 
+      *(hardware_invalid_grab_time_out)*
+      *Info to Collect:* 
        • Provide export info (must have INI, recipe, image, DLLDirectory)
        • V4/V5 backup folder
        • Cycle time (vision based)
@@ -226,16 +226,16 @@ responses:
        • Onsite Analysis: Hardware setup adjustment
   utter_collect_hardware_image_flickering:
   - text: |-
-      **(hardware_image_flickering)**
-      **Info to Collect:** 
+      *(hardware_image_flickering)*
+      *Info to Collect:* 
        • Provide export info (must have INI, recipe, image, DLLDirectory)
        • V4/V5 backup folder
        • Onsite Analysis: Software setting adjustment
        • Onsite Analysis: Hardware setup adjustment
   utter_collect_vision_overkill_underkill:
   - text: |-
-      **(vision_overkill_underkill)** 
-      **Info to Collect:** 
+      *(vision_overkill_underkill)* 
+      *Info to Collect:* 
        • Export info 
        • Image of good unit and defect unit 
        • Committed Vision Spec
@@ -245,8 +245,8 @@ responses:
        		--> Software setting adjustment
   utter_collect_vision_defect_not_visible:
   - text: |-
-      **(vision_defect_not_visible)** 
-      **Info to Collect:** 
+      *(vision_defect_not_visible)* 
+      *Info to Collect:* 
        • Committed Vision Spec
        		--> Committed inspection (accuracy & min detect size)
             --> Cycle time
@@ -257,8 +257,8 @@ responses:
        • Vision and Scope image with defect pin point
   utter_solution_crash:
   - text: |-
-      **(crash)**
-      **Please further analyze based on the following methods:** 
+      *(crash)*
+      *Please further analyze based on the following methods:* 
        • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
        • Revert to backup software. 
        • Compare with good machine, and copy the DLL or software from good machine to NG machine.
@@ -304,8 +304,8 @@ responses:
   - text: Age is just a number, and mine is unlisted.
   utter_solution_software_bug_random:
   - text: |-
-      **(software_bug_random)**
-      **Please further analyze based on the following methods:** 
+      *(software_bug_random)*
+      *Please further analyze based on the following methods:* 
        • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
        • Revert to backup software. 
        • Compare with good machine, and copy the DLL or software from good machine to NG machine.
@@ -318,8 +318,8 @@ responses:
        • Consult regional TS leader.
   utter_solution_software_bug_simulate:
   - text: |-
-      **(software_bug_simulate)**
-      **Please further analyze based on the following methods:** 
+      *(software_bug_simulate)*
+      *Please further analyze based on the following methods:* 
        • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
        • Revert to backup software. 
        • Compare with good machine, and copy the DLL or software from good machine to NG machine.
@@ -334,8 +334,8 @@ responses:
        • Consult regional TS leader.
   utter_solution_software_vision_cycle_time_spike:
   - text: |-
-      **(software_vision_cycle_time_spike)**
-      **Please further analyze based on the following methods:** 
+      *(software_vision_cycle_time_spike)*
+      *Please further analyze based on the following methods:* 
        • Is software upgrade has been done recently? If yes, please revert to the previous DLL.
        • Revert to backup software. 
        • Compare with good machine, and copy the DLL or software from good machine to NG machine.
@@ -359,8 +359,8 @@ responses:
   - text: Alright no worries. Please gather the following information along with our conversation and send them to Vitrox Jira.
   utter_solution_software_grab_issue:
   - text: |-
-      **(software_grab_issue)**
-      **Please further analyze based on the following methods:** 
+      *(software_grab_issue)*
+      *Please further analyze based on the following methods:* 
        • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
        • Revert to backup software. 
        • INI key change? Please revert the INI key value.
@@ -372,14 +372,14 @@ responses:
        • Consult regional TS leader.
   utter_solution_hardware_bluescreen:
   - text: |-
-      **(hardware_bluescreen)**
-      **Please further analyze based on the following methods:** 
+      *(hardware_bluescreen)*
+      *Please further analyze based on the following methods:* 
        • Check memory usage is it more than 2GB, if yes, please identify which engine causing it, and disable it to continue run production.
        • Consult regional TS leader.
   utter_solution_hardware_invalid_grab_time_out:
   - text: |-
-      **(hardware_invalid_grab_time_out)**
-      **Please further analyze based on the following methods:** 
+      *(hardware_invalid_grab_time_out)*
+      *Please further analyze based on the following methods:* 
        • Check cable connection (camera cable, triggering cable, com port).
        • Check whether the LS controller is detected (use device manager).
        • Check whether CamSelection is correct or not.
@@ -389,16 +389,16 @@ responses:
        • Consult regional TS leader.
   utter_solution_hardware_image_flickering:
   - text: |-
-      **(hardware_image_flickering)**
-      **Please further analyze based on the following methods:** 
+      *(hardware_image_flickering)*
+      *Please further analyze based on the following methods:* 
        • Check cable connection (camera cable, triggering cable, com port).
        • Check whether the LS controller is detected (use device manager).
        • Check light source mode, .xml file, etc.
        • Consult regional TS leader.
   utter_solution_hardware_LS_malfunction:
   - text: |-
-      **(hardware_LS_malfunction)**
-      **Please further analyze based on the following methods:** 
+      *(hardware_LS_malfunction)*
+      *Please further analyze based on the following methods:* 
        • Check cable connection (camera cable, triggering cable, com port).
        • Check whether the LS controller is detected (use device manager).
        • Check light source mode, .xml file, etc.
@@ -407,8 +407,8 @@ responses:
        • Consult regional TS leader.
   utter_solution_vision_overkill_underkill:
   - text: |-
-      **(vision_overkill_underkill)**
-      **Please further analyze based on the following methods:** 
+      *(vision_overkill_underkill)*
+      *Please further analyze based on the following methods:* 
        • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
        • Revert to backup software. 
        • Compare with good machine, and copy the DLL or software from good machine to NG machine.
@@ -421,14 +421,14 @@ responses:
        • Consult regional TS leader.
   utter_solution_vision_lighting_unevenness:
   - text: |-
-      **(vision_lighting_unevenness)**
-      **Please further analyze based on the following methods:** 
+      *(vision_lighting_unevenness)*
+      *Please further analyze based on the following methods:* 
        • Fine tune lighting - light source working distance, lighting intensity of each channel.
        • Consult regional TS leader.
   utter_solution_vision_defect_not_visible:
   - text: |-
-      **(vision_defect_not_visible)**
-      **Please further analyze based on the following methods:** 
+      *(vision_defect_not_visible)*
+      *Please further analyze based on the following methods:* 
        • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
        • Revert to backup software. 
        • Compare with good machine, and copy the DLL or software from good machine to NG machine.
@@ -441,8 +441,8 @@ responses:
        • Consult regional TS leader.
   utter_solution_vision_cycle_time_too_high:
   - text: |-
-      **(vision_cycle_time_too_high)**
-      **Please further analyze based on the following methods:** 
+      *(vision_cycle_time_too_high)*
+      *Please further analyze based on the following methods:* 
        • Is software upgrade has been done recently? If yes, plesae revert to the previous DLL.
        • Revert to backup software. 
        • Compare with good machine, and copy the DLL or software from good machine to NG machine.
@@ -475,8 +475,8 @@ responses:
     text: Did our AI work?
   utter_collect_vision_cycle_time_high:
   - text: |-
-      **(vision_cycle_time_high)**
-      **Info to Collect:** 
+      *(vision_cycle_time_high)*
+      *Info to Collect:* 
        • Provide export info (must have INI, recipe, image, DLLDirectory)
        • V4/V5 backup folder 
        • Software version comparision with other handler 
@@ -487,8 +487,8 @@ responses:
        •
   utter_collect_hardware_LS_malfunction:
   - text: |-
-      **(hardware_ls_malfunction)** 
-      **Info to Collect:** 
+      *(hardware_ls_malfunction)* 
+      *Info to Collect:*
        • Provide export info (must have INI, recipe, image, DLLDirectory)
        • V4/V5 backup folder 
        • Screenshot / recording video
@@ -500,8 +500,8 @@ responses:
     text: I’m sorry, I don’t understand. Could you say it again? 😢
   utter_collect_vision_lighting_unevenness:
   - text: |-
-      **(vision_lighting_unevenness)** 
-      **Info to Collect:** 
+      *(vision_lighting_unevenness)* 
+      *Info to Collect:* 
        • Export info 
        • Image of good unit and defect unit 
        • Committed Vision Spec

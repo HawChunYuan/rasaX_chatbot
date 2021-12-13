@@ -372,6 +372,7 @@ nlu:
     - testtetts
     - abc
     - You
+    - not in the list
 - synonym: V4
   examples: |
     - software
